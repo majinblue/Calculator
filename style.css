@@ -1,0 +1,75 @@
+#calculator {  
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    height: 400px;
+    width: 300px;
+    border: 1px solid black;
+}
+
+/* Styling the display */
+#display {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: rgb(56, 56, 56);
+}
+
+h1 {
+    color: white;
+    padding-right: .5em;
+    margin: .3em 0em;
+}
+
+/* Styling the buttons */
+button {
+    border: none;
+    cursor: pointer;
+}
+
+#buttons {
+    display: flex;
+}
+
+.number-buttons {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr) ;
+    grid-template-rows: repeat(4, 2fr);
+}
+
+.btn {
+    transition-duration: 0.4s;
+    background-color: rgb(124, 124, 124);
+    color: white;
+}
+
+.btn:hover {
+    background-color: rgba(163, 163, 163, 0.666);
+    color: black;
+}
+
+#clear {
+    transition-duration: 0.4s;
+    background-color: rgb(41, 41, 41);
+}
+
+#clear:hover {
+    background-color: rgba(163, 163, 163, 0.666);
+}
+
+.operator-buttons {
+    flex-grow: 1;
+    display: grid;
+}
+
+.operator-buttons > button {
+    transition-duration: 0.4s;
+    color: white;
+    background-color: rgb(255, 174, 23);
+}
+
+.operator-buttons > button:hover {
+    background-color: rgb(255, 255, 255);
+    color: orange;
+}
+
